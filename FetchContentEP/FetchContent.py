@@ -1,5 +1,5 @@
 # the target we want to open
-# cerner_2-5_2020
+# cerner_2^5_2020
 import requests
 from bs4 import BeautifulSoup 
 url="https://alopexoninnovation.com/category/engineering-productivity/"
