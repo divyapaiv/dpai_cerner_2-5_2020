@@ -1,4 +1,4 @@
-//cerner_2^5_2020
+// cerner_2^5_2020
 var multitasking=true,focusonsingletask=true,moremistake     = true,compromiseonquality = true
 var morenumberofdistractions = true,finaloutcome = ""
 
