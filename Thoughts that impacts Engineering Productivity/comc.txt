@@ -1,0 +1,51 @@
+select * from lh_d_br_hco lhco where lhco.hco_nbr=8402
+
+select lm.stratum_title from lh_abs_hbips_disc_metrics lm,encounter e where lm.discharge_utc_dt_tm between 
+cnvtdatetime('01-jan-2020 00:00:00') and cnvtdatetime('31-jan-2020 23:59:59')
+and lm.d_br_hco_id= 4373632547.00
+and lm.stratum_title='Age 18-64 years'
+and lm.active_ind=1
+;and lm.d_br_ccn_id= 3859426559.00 and lm.d_br_hco_id=0
+and e.encntr_id = lm.encntr_id
+group by lm.stratum_title
+order by lm.stratum_title
+
+
+select l.updt_dt_tm,Total_cnt=(l.medicare_total_cnt+l.non_medicare_total_cnt),l.stratum_txt,l.month_dt_tm from lh_abs_samp_info l where l.d_br_ccn_id= 3859426559.00
+and l.category_mean='HBIPSDC' and l.month_dt_tm between 
+cnvtdatetime('01-jan-2020 00:00:00') and cnvtdatetime('31-mar-2020 23:59:59')
+order by l.month_dt_tm
+
+select  format(datetimefind(cnvtdatetime('01-feb-2020'), 'M', 'E', 'E'),';;Q') from dual
+select lm.d_br_ccn_id,lm.d_br_hco_id,lm.active_ind from lh_abs_pc_mother_metrics lm where lm.discharge_utc_dt_tm between 
+cnvtdatetime('01-jan-2020 00:00:00') and cnvtdatetime('31-mar-2020 23:59:59')
+and lm.d_br_hco_id= 4373632547.00
+and lm.d_br_ccn_id=  3805532981.00 ;and lm.d_br_hco_id=0
+
+
+
+select lm.d_br_ccn_id,lm.d_br_hco_id,lm.active_ind,lm.sample_ind from lh_abs_pc_mother_metrics lm where lm.discharge_utc_dt_tm between 
+cnvtdatetime('01-jan-2020 00:00:00') and cnvtdatetime('31-jan-2020 23:59:59')
+and lm.d_br_hco_id= 4373632547.00
+and lm.active_ind=1
+;and lm.d_br_ccn_id=  3805532981.00
+
+
+select e.disch_dt_tm,e.active_ind,lm.active_ind,lm.financial_nbr_txt,lm.encntr_id,lm.completed_dt_tm,lm.d_br_ccn_id,lm.d_br_hco_id,lm.active_ind,lm.sample_ind,lm.discharge_utc_dt_tm 
+from lh_abs_pc_mother_metrics lm,encounter e where lm.discharge_utc_dt_tm between 
+cnvtdatetime('01-feb-2020 00:00:00') and cnvtdatetime('29-feb-2020 23:59:59')
+and lm.d_br_hco_id= 4373632547.00
+;and lm.d_br_ccn_id=  3805532981.00
+and lm.active_ind=1
+and e.encntr_id=lm.encntr_id
+
+select lm.d_br_ccn_id,lm.d_br_hco_id,lm.active_ind,lm.sample_ind from lh_abs_pc_mother_metrics lm 
+where lm.discharge_utc_dt_tm between 
+cnvtdatetime('01-mar-2020 00:00:00') and cnvtdatetime('31-mar-2020 23:59:59')
+and lm.d_br_hco_id= 4373632547.00
+;and lm.d_br_ccn_id=  3805532981.00
+
+select l.d_br_ccn_id,l.updt_dt_tm,l.month_dt_tm,l.category_mean,l.medicare_total_cnt,l.non_medicare_total_cnt from lh_abs_samp_info l where l.d_br_ccn_id= 3805532981.00
+and l.category_mean='PCM' and l.month_dt_tm between 
+cnvtdatetime('01-jan-2020 00:00:00') and cnvtdatetime('31-mar-2020 23:59:59')
+;select 
