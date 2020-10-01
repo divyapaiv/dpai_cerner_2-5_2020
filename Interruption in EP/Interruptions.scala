@@ -1,6 +1,6 @@
 /* This demonstrates how distractions can affecte your work which minimizes EP.This will provide different outcome on different run
 The sleep=Work that we do 
-The minutes_needed_to_fall_asleep = Time needed to complete the work
+The minutes_needed_to_fall_asleep = This depicts time we spend on recall the point when we got interrupted.
 Random interruptions are unplanned meetings/planned meeting which can actually increase the time that we spend regaining the lost track. 
 Minimize as many meetings as possible unless its very necessary to increase engineering producivity. 
 Cerner_2^5_2020 
@@ -19,7 +19,7 @@ object Interruptions {
         if(random%5==0)
         {
             current_min=0
-            println("Oh no my sleep is disturbed now again I have to try to sleep some scratch!")
+            println("Oh no! my sleep is disturbed now again I have to try to sleep from scratch!")
             
         }
         total_mins_spent+=1
@@ -27,8 +27,8 @@ object Interruptions {
         println(fs)
       }
       
-     println(printf( "Minutes spent on falling asleep %d", total_mins_spent ))
-     println(printf( "Minutes needed to fall asleep %d", minutes_needed_to_fall_asleep ))
+     println(printf( "Minutes spent on trying to fall asleep %d", total_mins_spent ))
+     println(printf( "Actual minutes needed to fall asleep %d", minutes_needed_to_fall_asleep ))
       
    }
 }
