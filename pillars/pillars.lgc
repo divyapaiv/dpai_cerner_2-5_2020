@@ -1,0 +1,12 @@
+# Prints three pillars of engineering productivity 
+# Can be run at https://tio.run/#logicode
+# cerner_2^5_2020 
+var start=1100
+var mid=1101
+var end=1110
+#var l=@(a+00)
+#var o=a+11
+#@ prints ascii value
+out @(start+101)+@(start+110)+@(start+110)+@(mid+001)+@(start+011)+@(mid+001)+@(start+101)+@(mid+110)+@(end+100)
+out @(start+101)+@(start+110)+@(start+110)+@(start+101)+@(start+011)+@(end+100)+@(mid+001)+@(end+110)+@(start+101)
+out @(end+011)+@01111001+@(end+011)+@(end+100)+@(start+101)+@(mid+101)+@(start+001)+@(end+100)+@(mid+001)+@(start+011)
