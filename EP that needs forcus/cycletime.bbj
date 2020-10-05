@@ -1,0 +1,26 @@
+# https://tio.run/#bitbitjump
+# cerner_2^5_2020 
+# following is displays  formula to calculate cycle time which needs to be tracked to keep engineering team productive
+       Z0:0 Z1:0
+start: .deref p X
+       .testH X print -1
+print: .out X
+       .add p BASE p
+       0 0 start
+       p:H X:0
+       H:10 67 121 
+99 108 101 
+32 116 105 
+109 101 32 
+61 32 84 
+97 115 107 
+32 115 116 
+97 114 116 
+101 100 43 
+32 84 97 
+115 107 32 
+99 111 109 
+112 108 101 
+116 101 100 
+32 32 -1
+.include lib.bbj
