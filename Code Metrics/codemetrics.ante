@@ -1,0 +1,30 @@
+#Can be run at https://tio.run/#ante  
+# cerner_2^5_2020
+#This program prints two important factor which is necessary for EP.
+#LOC -Line of code which will impact the time taken to develop those codes. 
+#code churn- The number of times code has be changed   
+#♦️ indicates add
+#♠️ subtract 
+#♥️ indicates multiply 
+#♣️ indicates division
+#Jx prints value stored in Ax
+#Ax is the ultimate placeholder                                             
+9♦ 8♥
+A♦️ 4♦️
+J♦
+A♦ 3♦️
+J♦
+A♦ 9♠️ 3♠️
+J♦ 
+A♦ 2♠️ 2♣️ 2♠️ 3♣️
+J♦️
+8♥️ 8♥️ 3♦️
+J♥
+A♥ 8♦️ 4♦️ J♥
+A♥️ 9♠️ 2♠️ J♥️
+A♥️ 5♦️ 4♠️ J♥️
+A♥️ 2♠️ J♥️
+A♥️ 5♦️ J♥️
+A♥️ 6♦️ 6♦️ 6♦️ 5♠️ J♥️ 
+A♥️ 3♠️ J♥️ 
+A♥️ 4♠️ J♥️
