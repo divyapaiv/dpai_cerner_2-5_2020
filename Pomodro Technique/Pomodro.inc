@@ -1,4 +1,4 @@
-# cerner_2^5_2020 
+#  cerner_2^5_2020 
 # run at https://tio.run/#icon
 procedure main()
     local x;
