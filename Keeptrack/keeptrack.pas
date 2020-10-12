@@ -1,6 +1,5 @@
 { This program gives how can we keep track of our daily work and improve the productivity based on gathered data }
 { cerner_2^5_2020 }
-{ working hours journal}
 PROGRAM keeptrack;
 uses Sysutils;
   function keeptrack(activity: string; timespent: integer;day:string;Remaining:integer): integer;
