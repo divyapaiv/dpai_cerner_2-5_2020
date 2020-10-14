@@ -6,7 +6,7 @@
 #We need plan it in a order in which we need to take up tasks so that we can completely 
 # utilize our capcity
 # can be run at https://repl.it/languages/Ruby
-# cerner_2^5_2020
+# cerner_2^5_2020 
 def deduct_capacity (stones, container_capacity)
 stones.each { |x| 
 if(container_capacity-x>=0) then
