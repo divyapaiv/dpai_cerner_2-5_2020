@@ -1,5 +1,5 @@
 //Run at https://kotlinlang.org/
-// cerner_2^5_2020 
+// cerner_2^5_2020  
 
 val tips = mapOf("check_email_in_morning" to true, 
                  "set_goals" to false, "organized_set_up"          to false
