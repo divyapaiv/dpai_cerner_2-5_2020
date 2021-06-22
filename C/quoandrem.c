@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <stdlib.h>
-//hi
+//hibye
 int main(void) {
          int dividend=21,divisor=10,quotient = 0;
 	//div bdivisor 0
