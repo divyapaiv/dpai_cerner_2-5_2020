@@ -22,7 +22,6 @@ int main() {
   string Commits[2]={"53746f72792031","53746f72792032"};
   string Sprints[3]={"537072696e742031","537072696e742032","537072696e742033"};
   cout<<"This is program explains "+hexToASCII(EP[0])<<endl;
-  cout<<hexToASCII(EP[1])<<" Is divided into "<<hexToASCII(EP[2])<<" and "<<hexToASCII(EP[3])<<endl;
   cout<<hexToASCII(EP[2])<<" has "<<hexToASCII(EP[4])<<" and It's planned for "<<hexToASCII(EP[5])<<endl;
   cout<<hexToASCII(EP[3])<<" has "<<hexToASCII(EP[6])<<" and It's planned for "<<hexToASCII(EP[7])<<endl;
   cout<<"Our Commit was " <<hexToASCII(Commits[0])<<" and "<<hexToASCII(Commits[1]) <<endl;
