@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <limits.h>
 #include <stdlib.h>https://github.com/divyapaiv/dpai_cerner_2-5_2020/blob/dpv/C/quoandrem.c
-//hibyemno
+//hibyemno xyz
 int main(void) {
          int dividend=21,divisor=10,quotient = 0;
 	//div bdivisor 0
